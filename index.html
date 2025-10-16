@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake News Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fake News Generator</h1>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="dark-toggle">🌙 Dark Mode</button>
+
+    <!-- Custom Dropdown -->
+    <div class="dropdown-wrapper">
+      <div class="dropdown-selected" id="selectedCategory">Choose Category</div>
+      <ul class="dropdown-list" id="dropdownList">
+        <li data-value="sports">⚽ Sports</li>
+        <li data-value="music">🎵 Music</li>
+        <li data-value="politics">🏛 Politics</li>
+        <li data-value="tech">💻 Tech</li>
+        <li data-value="entertainment">🎬 Entertainment</li>
+        <li data-value="health">💊 Health</li>
+      </ul>
+    </div>
+
+    <!-- Generate Button -->
+    <button id="generate" class="generate-btn">Generate News</button>
+
+    <!-- News Output -->
+    <div id="output" class="headline"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
